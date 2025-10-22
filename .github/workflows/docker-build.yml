@@ -7,7 +7,8 @@ on:
     branches: [ main, dev, staging ]
 
 jobs:
-  build:
+  docker-build-status:
+    name: "Docker Build Status Check"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
